@@ -41,6 +41,7 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// declaring selectors
 const navigation = document.querySelector('nav');
 const links = document.querySelectorAll('a');
 const ctaH1 = document.querySelector('h1');
@@ -65,6 +66,7 @@ for(let i = 0; i < navArr.length -1; i++){
   links[i].textContent = navArr[i];
   links[i].style.color = 'green';
 }
+
 
 start.textContent = 'Howdy';
 end.textContent = 'Telephone Heater';
@@ -98,59 +100,6 @@ footerP.textContent = siteContent['footer']['copyright'];
 
 
 
-// Attempt #1 before student support 
-
-// // getting nav items assingning to navItems
-// const navItems = document.querySelectorAll('nav a');
-// console.log(navItems);
-
-// // loop through the array and assign the green color 
-// navItems.color = 'green';
-
-// // Getting circular image of code snippet 
-// const ctaImg = document.querySelector('#cta-img');
-// ctaImg.setAttribute('src', siteContent["cta"]["img-src"])
-
-// // setting middle banner image
-// const midImg = document.querySelector('#middle-img');
-// midImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
-
-
-
-// // navItems.forEach(navItems => console.log(navItems.textContent)); - this prints each nav item's text content
-
-// // turning navItems into an array & assigning text Content
-// const navArray = Array.from(navItems);
-// console.log(navArray);
-// // forEach assigns each element in navArray to have green text
-// navArray.forEach(array => {
-//   array.style.color = 'green'
-// });
-
-// // setting nav text content
-// navArray[0].textContent = siteContent['nav']['nav-item-0'];
-// navArray[1].textContent = siteContent['nav']['nav-item-1'];
-// navArray[2].textContent = siteContent['nav']['nav-item-2'];
-// navArray[3].textContent = siteContent['nav']['nav-item-3'];
-// navArray[4].textContent = siteContent['nav']['nav-item-4'];
-// navArray[5].textContent = siteContent['nav']['nav-item-5'];
-
-// // //  adding pastNav
-// // const pastNav = document.createElement('nav');
-// // pastNav.textContent = 'Past';
-// // pastNav.href = '#';
-// // document.querySelector('nav').appenedChild(pastNav);
-
-// // const futureNav = document.createElement('nav');
-// // futureNav.textContent = 'Past';
-// // futureNav.href = '#';
-// // document.querySelector('nav').appenedChild(futureNav);
-
-// // CTA content
-// const ctaContent = document.querySelector('.cta h1');
-// ctaContent.innerHTML = 'DOM<br> Is<br> Awesome';
-// document.querySelector('button').textContent ='Get Started';
-// console.log(ctaContent);
 
 
 
